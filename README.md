@@ -45,7 +45,7 @@ Didalam class **AsistenDosen** memiliki 2 Atribut, yaitu :
 * disini saya membuat class human lalu mahasiswa dan dosen mengextend dari class human
 * untuk class yg lain seperti anggotadpm,anggotabem dan asisten dosen dari mahasiswa karena ke3 itu pasti mahasiswa jadi saya mengextend dari sana
 * lalu untuk interaksinya menggunakan boolean set status jika true berarti bisa diberikan jika false berarti tidak bisa diberikan
-* saya juga me
+* lalu untuk dosen itu has a mahasiswa jadi dosen dan mahasiswa hubungannya composite, karena dosen has a mahasiswa, dosen bisa memiliki beberapa mahasiswa
 
 
 ### Cara Menjalankan Program
