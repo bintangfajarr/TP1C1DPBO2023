@@ -8,7 +8,7 @@ Saya Muhammad Cahyana Bintang Fajar NIM 2102665 mengerjakan TP1 dalam mata kulia
 Terdiri dari 6 class yaitu **Human**, **Dosen**, **Mahasiswa**, **AnggotaBEM**, **AnggotaDPM**, dan **AsistenDosen**
 
 #### Diagram
-![gege](diagram.drawio.png)
+![gege](diagram.png)
 
 Didalam class **Human** memiliki 2 Atribut, yaitu : 
 * Nama
@@ -54,4 +54,4 @@ Didalam class **AsistenDosen** memiliki 2 Atribut, yaitu :
 
 
 ### Dokumentasi 
-![CPP program](diagram.png)
+![CPP program](ss.png)
