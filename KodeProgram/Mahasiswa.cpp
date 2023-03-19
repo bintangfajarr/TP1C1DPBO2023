@@ -6,7 +6,7 @@ Mahasiswa::Mahasiswa()
     this->prodi = "";
     this->fakultas = "";
 }
-Mahasiswa::Mahasiswa(string nama, string jenis_kelamin, string nim, string laptop, string prodi, string fakultas)
+Mahasiswa::Mahasiswa(string nama, string jenis_kelamin, string nim, string laptop, string prodi, string fakultas) : Human(nama, jenis_kelamin)
 {
     this->nim = nim;
     this->laptop = laptop;

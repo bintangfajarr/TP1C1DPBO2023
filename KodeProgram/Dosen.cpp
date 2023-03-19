@@ -6,7 +6,7 @@ Dosen::Dosen()
     this->whiteboard_markers = "";
     this->mhs = {};
 }
-Dosen::Dosen(string nama, string jenis_kelamin, string nip, string laptop, string whiteboard_markers)
+Dosen::Dosen(string nama, string jenis_kelamin, string nip, string laptop, string whiteboard_markers) : Human(nama, jenis_kelamin)
 {
     this->nip = nip;
     this->laptop = laptop;
@@ -48,6 +48,17 @@ void Dosen::add_mhs(Mahasiswa mahasiswa)
 {
     this->mhs.push_back(mahasiswa);
 }
+// void Dosen::berikan_nilai(AsistenDosen asdos)
+// {
+//     if (asdos.get_status_nilai() == true)
+//     {
+//         cout << "Nilai Anda sudah saya upload di SIAK" << endl;
+//     }
+//     else
+//     {
+//         cout << "Saya belum mendapatkan nilai dari asdos" << endl;
+//     }
+// }
 Dosen::~Dosen()
 {
 }

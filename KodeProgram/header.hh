@@ -16,9 +16,6 @@ public:
     string get_nama();
     string get_jenis_kelamin();
 
-    void makan(string nama);
-    void minum(string nama);
-    void tidur(string nama);
     ~Human();
 };
 
@@ -67,8 +64,7 @@ public:
     vector<Mahasiswa> get_mhs();
 
     void add_mhs(Mahasiswa mahasiswa);
-    void beri_nilai();
-    void beri_tugas();
+    // void berikan_nilai(AsistenDosen asdos);
 
     ~Dosen();
 };
@@ -78,18 +74,18 @@ class AnggotaBEM : public Mahasiswa
 private:
     string divisi;
     string jabatan;
-    vector<string> proker;
     bool status_proker;
 
 public:
     AnggotaBEM();
-    AnggotaBEM(string nama, string jenis_kelamin, string nim, string laptop, string textbooks, string divisi, string jabatan);
+    AnggotaBEM(string nama, string jenis_kelamin, string nim, string laptop, string prodi, string fakultas, string divisi, string jabatan);
     void set_divisi(string divisi);
     void set_jabatan(string jabatan);
     void set_status_proker(bool status_proker);
 
     string get_divisi();
     string get_jabatan();
+    bool get_status_proker();
     ~AnggotaBEM();
 };
 
@@ -101,11 +97,12 @@ private:
 
 public:
     AnggotaDPM();
-    AnggotaDPM(string nama, string jenis_kelamin, string nim, string laptop, string textbooks, string divisi, string jabatan);
+    AnggotaDPM(string nama, string jenis_kelamin, string nim, string laptop, string prodi, string fakultas, string divisi, string jabatan);
 
     void set_divisi(string divisi);
     void set_jabatan(string jabatan);
 
+    void apresiasi(AnggotaBEM bem);
     string get_divisi();
     string get_jabatan();
     ~AnggotaDPM();
@@ -119,11 +116,11 @@ private:
 
 public:
     AsistenDosen();
-    AsistenDosen(string nama, string jenis_kelamin, string nim, string laptop, string textbooks, string matkul);
+    AsistenDosen(string nama, string jenis_kelamin, string nim, string laptop, string prodi, string fakultas, string matkul);
     void set_matkul(string matkul);
-    void beri_nilai();
-    void beri_tugas();
+    void set_status_nilai(bool status_nilai);
 
     string get_matkul();
+    bool get_status_nilai();
     ~AsistenDosen();
 };
